@@ -1,0 +1,24 @@
+{
+	"builders": [
+		{
+			"type": "scaleway",
+			"api_access_key": "",
+			"api_token": "",
+			"image": "89c80d27-ddf4-4ffa-8215-b335cce3fd05",
+			"region": "par1",
+			"commercial_type": "DEV1-M",
+			"ssh_username": "root"
+		}
+	],
+	"provisioners": [
+		{
+			"type": "file",
+			"source": "files/ansible_scw_perso.pub",
+			"destination": "/tmp/ansible_scw_perso.pub"
+		},
+		{
+			"type": "shell",
+			"scripts": [ "provision/system.sh", "provision/ansible.sh" ]
+		}
+	]
+}

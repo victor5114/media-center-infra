@@ -1,0 +1,9 @@
+---
+- name: Deploy server
+  hosts: tag_etl_server
+  gather_facts: yes
+  vars:
+    env: prod
+
+  roles:
+  - imr/deploy-etl

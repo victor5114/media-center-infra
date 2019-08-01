@@ -1,0 +1,9 @@
+---
+- name: Deploy server
+  hosts: tag_prod
+  gather_facts: yes
+  vars:
+    env: prod
+
+  roles:
+  - imr/deploy-web

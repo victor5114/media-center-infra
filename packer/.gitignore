@@ -1,0 +1,8 @@
+# Cache objects
+packer_cache/
+
+# For built boxes
+*.box
+account.json
+conf/users.conf
+conf/storage-editor-secrets.json

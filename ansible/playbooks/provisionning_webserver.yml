@@ -1,0 +1,8 @@
+---
+- name: Provisionning production environnement
+  hosts: tag_web-server
+  gather_facts: yes
+
+  roles:
+  - scw-mount
+  - imr/web-server

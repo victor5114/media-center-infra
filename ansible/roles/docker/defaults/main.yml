@@ -1,0 +1,4 @@
+---
+docker_storage_driver: overlay2
+docker_hosts:
+- fd://

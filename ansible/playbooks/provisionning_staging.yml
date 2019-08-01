@@ -1,0 +1,11 @@
+---
+- name: Provisionning staging environnement
+  hosts: tag_staging
+  gather_facts: yes
+  vars:
+    env: staging
+
+  roles:
+  - scw-mount
+  - imr/web-server
+  # - worker

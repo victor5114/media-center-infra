@@ -1,0 +1,4 @@
+---
+scw_device: data
+scw_mount: /data
+scw_fs: xfs

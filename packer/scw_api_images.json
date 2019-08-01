@@ -1,0 +1,1460 @@
+{
+   "images" : [
+      {
+         "modification_date" : "2019-08-01T15:32:07.907245+00:00",
+         "root_volume" : {
+            "id" : "cc0096ce-f56f-4d10-9fd9-25673e8c3f1e",
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-96df915b-ce10-4ecd-b8cb-718794f4a93d-2019-08-01_13:32"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2019-08-01T13:32:48.403599+00:00",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "public" : true,
+            "title" : "x86_64 longterm 4.19 latest",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.19-latest/vmlinuz",
+            "dtb" : "",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "id" : "61b61af5-da09-4899-bdcc-83b2ff236f4a"
+         },
+         "id" : "c525c850-5b0a-4d64-9dcb-9f01dc49d9b8",
+         "public" : true,
+         "name" : "Debian Buster",
+         "state" : "available",
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db"
+      },
+      {
+         "public" : true,
+         "name" : "Debian Stretch",
+         "state" : "available",
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-e0bc06cb-8151-44fe-b1a0-4bbb2f0829bd-2019-07-24_15:03",
+            "size" : 10000000000,
+            "id" : "2e6eb2d2-e857-4e79-ad35-0ffc89d3a5fe"
+         },
+         "modification_date" : "2019-07-24T17:42:06.085052+00:00",
+         "arch" : "x86_64",
+         "creation_date" : "2019-07-24T15:03:10.538784+00:00",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : true,
+            "title" : "x86_64 mainline 4.9.182 rev1",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "8275735d-0c73-48cd-88de-c64101d6cbcc",
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.182-rev1/vmlinuz-4.9.182",
+            "architecture" : "x86_64"
+         },
+         "id" : "275b9eb7-3e73-41d9-a05c-ca1ffe28b30c"
+      },
+      {
+         "state" : "available",
+         "name" : "nextcloud",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2019-04-16T11:31:52.248539+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-30da308b-ea57-4ed4-a7ac-81e1c6b882b8-2019-04-16_08:55",
+            "id" : "1ab3460e-a0cc-4cb3-b4e8-4b2050334b91"
+         },
+         "arch" : "arm64",
+         "creation_date" : "2019-04-16T08:55:52.528046+00:00",
+         "id" : "0390c3e0-186d-4b24-8d0d-0e08b74fb59a",
+         "default_bootscript" : {
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "aarch64 mainline 4.9.93 rev1",
+            "public" : true,
+            "id" : "97b18dc5-701c-44d2-ac8b-b89a5ac4acb2",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "architecture" : "arm64",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.9-4.9.93-rev1/vmlinux-4.9.93",
+            "dtb" : ""
+         },
+         "extra_volumes" : {}
+      },
+      {
+         "arch" : "arm",
+         "creation_date" : "2019-04-16T08:47:43.132313+00:00",
+         "id" : "900971a4-3a3e-4ef9-b92f-b33c366c9f5c",
+         "default_bootscript" : {
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "5c8e4527-d166-4844-b6c6-087d7a6f5fb0",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "armv7l mainline 4.9.93 rev1"
+         },
+         "extra_volumes" : {},
+         "modification_date" : "2019-04-16T11:31:44.006023+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-37afb0a1-375f-46e6-92b7-751d3cf5045a-2019-04-16_08:47",
+            "id" : "072c6664-179c-45e4-bed3-4d5998d706a2"
+         },
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "state" : "available",
+         "name" : "nextcloud",
+         "public" : true
+      },
+      {
+         "public" : true,
+         "state" : "available",
+         "name" : "nextcloud",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "modification_date" : "2019-04-16T11:31:37.652958+00:00",
+         "root_volume" : {
+            "id" : "2627f547-92f7-4a7b-b476-c8d9f3d84c07",
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-5f16362e-8fad-4966-a2ca-72d2c717a43f-2019-04-16_08:46",
+            "size" : 10000000000
+         },
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "dtb" : "",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "title" : "x86_64 mainline 4.9.93 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false
+         },
+         "id" : "7b7d4dde-6fe1-4586-a5a5-ae1af2ca2605",
+         "creation_date" : "2019-04-16T08:46:38.850108+00:00",
+         "arch" : "x86_64"
+      },
+      {
+         "modification_date" : "2019-04-09T12:27:50.862253+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-99ab6dbf-6f5f-4913-b6a4-4f392f1a02cc-2019-04-09_12:16",
+            "id" : "13d3dad5-e4c9-43c1-bde2-c97200683b08"
+         },
+         "id" : "4527e41c-0e90-43a8-857e-d9584bf8467f",
+         "extra_volumes" : {},
+         "default_bootscript" : null,
+         "arch" : "x86_64",
+         "creation_date" : "2019-04-09T12:16:39.221137+00:00",
+         "state" : "available",
+         "name" : "GitLab",
+         "public" : true,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "public" : true,
+         "state" : "available",
+         "name" : "LEMP",
+         "creation_date" : "2019-04-09T10:54:59.585811+00:00",
+         "arch" : "arm64",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : true,
+            "title" : "aarch64 mainline 4.9.93 rev1",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "id" : "97b18dc5-701c-44d2-ac8b-b89a5ac4acb2",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.9-4.9.93-rev1/vmlinux-4.9.93",
+            "architecture" : "arm64",
+            "dtb" : ""
+         },
+         "id" : "26c3727a-5b77-4b26-89c9-445ea2006f07",
+         "modification_date" : "2019-04-09T12:28:07.256920+00:00",
+         "root_volume" : {
+            "name" : "snapshot-28d4ea11-4e78-438c-9411-edd515aefc44-2019-04-09_10:54",
+            "size" : 10000000000,
+            "volume_type" : "l_ssd",
+            "id" : "b2f01f4e-a1bd-4795-a3a7-dfc4d39b58c5"
+         }
+      },
+      {
+         "modification_date" : "2019-04-09T12:28:02.288891+00:00",
+         "root_volume" : {
+            "id" : "4b6a0653-6a20-42dd-9d06-749ba8b32e0d",
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-be108037-4eb8-4b4a-8637-da470d137df2-2019-04-09_10:50"
+         },
+         "arch" : "arm",
+         "creation_date" : "2019-04-09T10:50:08.100320+00:00",
+         "id" : "32332006-1420-4260-97c7-c1da586f68cd",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "armv7l mainline 4.9.93 rev1",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "id" : "5c8e4527-d166-4844-b6c6-087d7a6f5fb0",
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.9-4.9.93-rev1"
+         },
+         "name" : "LEMP",
+         "state" : "available",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db"
+      },
+      {
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "architecture" : "x86_64",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.9.93 rev1"
+         },
+         "id" : "1bd37d60-4494-485f-9a82-0a211005489c",
+         "arch" : "x86_64",
+         "creation_date" : "2019-04-09T10:48:03.563649+00:00",
+         "modification_date" : "2019-04-09T12:27:57.760122+00:00",
+         "root_volume" : {
+            "name" : "snapshot-15c382b0-6397-4729-a5a1-611d05a257e7-2019-04-09_10:48",
+            "size" : 10000000000,
+            "volume_type" : "l_ssd",
+            "id" : "7253015f-9c72-42b6-89f2-6936a0cc7468"
+         },
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "public" : true,
+         "state" : "available",
+         "name" : "LEMP"
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "name" : "Seedbox",
+         "state" : "available",
+         "public" : true,
+         "arch" : "arm",
+         "creation_date" : "2019-03-25T09:47:07.261720+00:00",
+         "id" : "a3160162-3d72-4632-8e42-4849a1280743",
+         "default_bootscript" : {
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.4-4.4.127-rev1",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.4-4.4.127-rev1",
+            "id" : "8c76c2b9-926e-44c5-b250-6f6480b5d313",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "title" : "armv7l mainline 4.4.127 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false
+         },
+         "extra_volumes" : {},
+         "modification_date" : "2019-03-25T10:39:39.143330+00:00",
+         "root_volume" : {
+            "name" : "snapshot-e6f6d717-7f54-4e71-94e0-6bda813b79c1-2019-03-25_09:47",
+            "size" : 10000000000,
+            "volume_type" : "l_ssd",
+            "id" : "0d162f2d-bb07-4d51-be42-0dd6d25d9e71"
+         }
+      },
+      {
+         "name" : "Seedbox",
+         "state" : "available",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2019-03-25T10:39:33.160252+00:00",
+         "root_volume" : {
+            "size" : 10000000000,
+            "name" : "snapshot-6ffe4b13-706f-429b-ba89-5a690590f7aa-2019-03-25_09:45",
+            "volume_type" : "l_ssd",
+            "id" : "c8605468-cb47-4381-91df-37fa66ccbcec"
+         },
+         "arch" : "arm64",
+         "creation_date" : "2019-03-25T09:45:12.611737+00:00",
+         "id" : "398875b6-de43-4946-976f-ba5189954912",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "architecture" : "arm64",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.4-4.4.127-rev1/vmlinux-4.4.127",
+            "dtb" : "",
+            "id" : "1802caeb-0594-4739-a798-583ff5b270c6",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "title" : "aarch64 mainline 4.4.127 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false
+         }
+      },
+      {
+         "id" : "f5d116e3-2b58-44cf-a83a-cd0682135473",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "public" : false,
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "architecture" : "x86_64"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2019-03-25T09:39:43.940967+00:00",
+         "modification_date" : "2019-03-25T10:39:30.112692+00:00",
+         "root_volume" : {
+            "id" : "f9f3a763-861b-42a9-8594-4a3d9fee9282",
+            "size" : 10000000000,
+            "name" : "snapshot-d36b41af-1d1e-4c3a-91bf-2ccdfd829935-2019-03-25_09:39",
+            "volume_type" : "l_ssd"
+         },
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "state" : "available",
+         "name" : "Seedbox",
+         "public" : true
+      },
+      {
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "public" : true,
+         "name" : "OpenVPN",
+         "state" : "available",
+         "extra_volumes" : {},
+         "default_bootscript" : null,
+         "id" : "cac79531-98d5-48fa-aba1-8250214b88a3",
+         "creation_date" : "2019-03-20T08:53:31.757262+00:00",
+         "arch" : "arm64",
+         "modification_date" : "2019-03-20T10:18:31.752096+00:00",
+         "root_volume" : {
+            "name" : "snapshot-a85811d5-503a-4c2d-be5f-e1a92e9f0dcc-2019-03-20_08:53",
+            "size" : 10000000000,
+            "volume_type" : "l_ssd",
+            "id" : "38f5e9fd-0df6-48d0-93f5-e024aa46a135"
+         }
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "public" : true,
+         "state" : "available",
+         "name" : "OpenVPN",
+         "arch" : "arm",
+         "creation_date" : "2019-03-20T08:48:14.586579+00:00",
+         "extra_volumes" : {},
+         "default_bootscript" : null,
+         "id" : "a5430536-2a51-425d-8613-ef84dae91e27",
+         "modification_date" : "2019-03-20T10:18:35.540575+00:00",
+         "root_volume" : {
+            "name" : "snapshot-fb74e8c4-1120-41d6-9df1-f70fa580ddbf-2019-03-20_08:48",
+            "size" : 10000000000,
+            "volume_type" : "l_ssd",
+            "id" : "09f21177-9630-4906-aadd-2ff13adef1f1"
+         }
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "name" : "OpenVPN",
+         "state" : "available",
+         "public" : true,
+         "arch" : "x86_64",
+         "creation_date" : "2019-03-20T08:47:06.419519+00:00",
+         "id" : "02906ae8-bf44-4dd0-bd05-6312dd9fa234",
+         "default_bootscript" : null,
+         "extra_volumes" : {},
+         "modification_date" : "2019-03-20T10:18:26.718802+00:00",
+         "root_volume" : {
+            "id" : "3db155cf-8688-4b78-bec1-3bcb32d07c69",
+            "size" : 10000000000,
+            "name" : "snapshot-5336d1b0-317e-4a83-b1ac-4c17886d0b9d-2019-03-20_08:47",
+            "volume_type" : "l_ssd"
+         }
+      },
+      {
+         "modification_date" : "2019-03-20T09:15:13.160839+00:00",
+         "root_volume" : {
+            "id" : "b13b0b57-994b-478d-9fe2-87e137b8142c",
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-e6580e7a-ce43-4870-8c9a-7e2addc11f2a-2019-03-15_16:30"
+         },
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "dtb" : ""
+         },
+         "extra_volumes" : {},
+         "id" : "0f44b130-2bc7-4f82-993e-de9d1042c56e",
+         "arch" : "x86_64",
+         "creation_date" : "2019-03-15T16:30:04.459664+00:00",
+         "public" : true,
+         "name" : "CentOS 7.6",
+         "state" : "available",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "id" : "5645133b-67a3-4644-9941-16f7e2b428ea",
+         "default_bootscript" : {
+            "public" : false,
+            "title" : "armv7l mainline 4.9.93 rev1",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "id" : "5c8e4527-d166-4844-b6c6-087d7a6f5fb0"
+         },
+         "extra_volumes" : {},
+         "creation_date" : "2019-03-07T13:55:02.026590+00:00",
+         "arch" : "arm",
+         "modification_date" : "2019-03-07T14:09:56.054026+00:00",
+         "root_volume" : {
+            "id" : "b41c2aa5-c86b-4b4b-a5d4-48ca9dce5782",
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-122c3e64-7fd8-45ea-ad74-adf7b4f3bc88-2019-03-07_13:55",
+            "size" : 10000000000
+         },
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "name" : "WordPress",
+         "state" : "available",
+         "public" : true
+      },
+      {
+         "name" : "WordPress",
+         "state" : "available",
+         "public" : true,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "modification_date" : "2019-03-07T14:09:52.334006+00:00",
+         "root_volume" : {
+            "id" : "ca1eb590-1214-4505-a21f-b835612199dd",
+            "size" : 10000000000,
+            "name" : "snapshot-871e5768-4245-4274-bc2e-761994a29b2f-2019-03-07_13:43",
+            "volume_type" : "l_ssd"
+         },
+         "id" : "757fac76-5265-46f8-8a1f-00c0fb270010",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "public" : true,
+            "title" : "aarch64 mainline 4.9.93 rev1",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "architecture" : "arm64",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.9-4.9.93-rev1/vmlinux-4.9.93",
+            "dtb" : "",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "id" : "97b18dc5-701c-44d2-ac8b-b89a5ac4acb2"
+         },
+         "creation_date" : "2019-03-07T13:43:07.975545+00:00",
+         "arch" : "arm64"
+      },
+      {
+         "id" : "c669011a-ee16-42b6-b0c3-ecd19e419539",
+         "default_bootscript" : {
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "aarch64 mainline 4.4.127 rev1",
+            "public" : false,
+            "id" : "1802caeb-0594-4739-a798-583ff5b270c6",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.4-4.4.127-rev1/vmlinux-4.4.127",
+            "architecture" : "arm64"
+         },
+         "extra_volumes" : {},
+         "arch" : "arm64",
+         "creation_date" : "2019-03-07T13:36:43.694773+00:00",
+         "modification_date" : "2019-03-07T14:10:07.980958+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-fb1528b9-2304-4658-8350-e4bc0fc5d31d-2019-03-07_13:36",
+            "size" : 10000000000,
+            "id" : "3adb0c49-cf15-4d2a-bd6e-bafab06ced32"
+         },
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "state" : "available",
+         "name" : "Docker",
+         "public" : true
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "state" : "available",
+         "name" : "Docker",
+         "public" : true,
+         "arch" : "arm",
+         "creation_date" : "2019-03-07T13:31:21.888531+00:00",
+         "id" : "45a7e942-1fb0-48c0-bbf6-0acb9af24604",
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "armv7l mainline 4.4.127 rev1",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "id" : "8c76c2b9-926e-44c5-b250-6f6480b5d313",
+            "kernel" : "kernel/armv7l-mainline-lts-4.4-4.4.127-rev1",
+            "architecture" : "arm",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.4-4.4.127-rev1"
+         },
+         "extra_volumes" : {},
+         "modification_date" : "2019-03-07T14:10:04.462498+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-42234cc9-e9af-43b3-b8cf-b4ada0b1e606-2019-03-07_13:31",
+            "id" : "a72f3839-0d28-4f40-889e-49c134b2c28f"
+         }
+      },
+      {
+         "modification_date" : "2019-03-07T14:10:00.402553+00:00",
+         "root_volume" : {
+            "id" : "ca1d4fcf-1baf-45d0-99f8-cced8da23435",
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-a0419a8c-711e-4635-a1da-914c6b0dc33f-2019-03-07_13:30"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2019-03-07T13:30:30.225078+00:00",
+         "default_bootscript" : {
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "architecture" : "x86_64",
+            "dtb" : "",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "public" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111"
+         },
+         "extra_volumes" : {},
+         "id" : "89c80d27-ddf4-4ffa-8215-b335cce3fd05",
+         "public" : true,
+         "state" : "available",
+         "name" : "Docker",
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db"
+      },
+      {
+         "id" : "8523fb41-500a-4f21-998b-890908da6119",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "dtb" : "",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.9.93 rev1"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2019-03-07T13:28:12.251113+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-d3a243da-b3b7-4c9f-bdd3-9091e5d44818-2019-03-07_13:28",
+            "size" : 10000000000,
+            "id" : "fc2c5f30-8339-454b-b3ca-b14d04a6dc5f"
+         },
+         "modification_date" : "2019-03-07T14:09:48.741773+00:00",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "name" : "WordPress",
+         "state" : "available",
+         "public" : true
+      },
+      {
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "architecture" : "x86_64",
+            "dtb" : ""
+         },
+         "extra_volumes" : {},
+         "id" : "541f4562-5417-4b59-85d6-caaf64c1f127",
+         "creation_date" : "2019-03-05T14:39:32.617653+00:00",
+         "arch" : "x86_64",
+         "root_volume" : {
+            "id" : "537658dc-ff3a-4087-95d8-b9acf8498bcf",
+            "name" : "snapshot-7beb3812-47ec-424f-8cbb-0e546be9672c-2019-03-05_14:39",
+            "size" : 10000000000,
+            "volume_type" : "l_ssd"
+         },
+         "modification_date" : "2019-03-05T15:06:41.443794+00:00",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "public" : true,
+         "name" : "Fedora 29",
+         "state" : "available"
+      },
+      {
+         "state" : "available",
+         "name" : "CentOS 7.6",
+         "public" : true,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "modification_date" : "2019-03-06T11:24:51.341850+00:00",
+         "root_volume" : {
+            "id" : "21728ddd-841e-4c6d-b111-c511fc75ecc8",
+            "size" : 10000000000,
+            "name" : "snapshot-0623465d-4b70-49d3-a9d2-b766d068e547-2019-03-05_12:34",
+            "volume_type" : "l_ssd"
+         },
+         "id" : "2e1353f3-02f7-441f-ab68-7218b874e341",
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "architecture" : "x86_64",
+            "dtb" : ""
+         },
+         "extra_volumes" : {},
+         "creation_date" : "2019-03-05T12:34:30.019823+00:00",
+         "arch" : "x86_64"
+      },
+      {
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "public" : true,
+         "name" : "Debian Stretch",
+         "state" : "available",
+         "default_bootscript" : {
+            "title" : "armv7l mainline 4.9.93 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "id" : "5c8e4527-d166-4844-b6c6-087d7a6f5fb0",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6"
+         },
+         "extra_volumes" : {},
+         "id" : "1eddbd4c-3a60-45b3-b2f7-26ab7bd2ccd2",
+         "arch" : "arm",
+         "creation_date" : "2019-03-05T10:40:48.167465+00:00",
+         "modification_date" : "2019-03-05T13:33:01.522359+00:00",
+         "root_volume" : {
+            "id" : "7d39088f-4ddd-4018-aef6-dfe05d0f04f6",
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-580887c8-cf42-4930-8740-7574aad88067-2019-03-05_10:40",
+            "size" : 10000000000
+         }
+      },
+      {
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "public" : true,
+            "title" : "aarch64 mainline 4.9.93 rev1",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "dtb" : "",
+            "architecture" : "arm64",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.9-4.9.93-rev1/vmlinux-4.9.93",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "97b18dc5-701c-44d2-ac8b-b89a5ac4acb2"
+         },
+         "id" : "18f57fd2-51e9-4568-95f4-92ce03e6ef84",
+         "arch" : "arm64",
+         "creation_date" : "2019-03-05T10:36:51.745634+00:00",
+         "modification_date" : "2019-03-05T13:32:56.224559+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-158e8a4e-eec7-47bd-b94d-cc783bf452ce-2019-03-05_10:36",
+            "id" : "4c13a5ff-cce8-4555-bfbe-d28a00d34c18"
+         },
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "public" : true,
+         "name" : "Debian Stretch",
+         "state" : "available"
+      },
+      {
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "architecture" : "x86_64",
+            "dtb" : "",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "public" : false,
+            "title" : "x86_64 mainline 4.9.93 rev1",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111"
+         },
+         "id" : "9a53e825-19f9-4e1f-b841-dd921e4e1b39",
+         "creation_date" : "2019-03-05T10:31:15.856624+00:00",
+         "arch" : "x86_64",
+         "modification_date" : "2019-03-05T13:32:50.802348+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-4aace151-8f28-455e-b9e1-79656dd8ba92-2019-03-05_10:31",
+            "id" : "b65d3286-c5d1-4984-956f-1f1b0bc61594"
+         },
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "public" : true,
+         "state" : "available",
+         "name" : "Debian Stretch"
+      },
+      {
+         "modification_date" : "2019-03-05T13:32:45.036625+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-664f5068-f21e-44ba-8a99-ea2dfd6fd91f-2019-03-05_10:27",
+            "size" : 10000000000,
+            "id" : "81992ee7-89b5-44f7-a260-5b4594c74b86"
+         },
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "armv7l mainline 4.9.93 rev1",
+            "public" : false,
+            "id" : "5c8e4527-d166-4844-b6c6-087d7a6f5fb0",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.9-4.9.93-rev1"
+         },
+         "id" : "f63fe42a-900f-4a5e-ba99-ab0e59469b7e",
+         "arch" : "arm",
+         "creation_date" : "2019-03-05T10:27:18.195593+00:00",
+         "public" : true,
+         "name" : "Ubuntu Bionic Beaver",
+         "state" : "available",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "modification_date" : "2019-03-05T13:32:39.314519+00:00",
+         "root_volume" : {
+            "id" : "c44b0e15-1fc8-4d7f-bda5-d1441961badd",
+            "volume_type" : "l_ssd",
+            "size" : 10000000000,
+            "name" : "snapshot-0cc60ad5-b557-4a67-847e-3d8cfc304d5d-2019-03-05_10:18"
+         },
+         "default_bootscript" : {
+            "id" : "97b18dc5-701c-44d2-ac8b-b89a5ac4acb2",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "dtb" : "",
+            "architecture" : "arm64",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.9-4.9.93-rev1/vmlinux-4.9.93",
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "aarch64 mainline 4.9.93 rev1",
+            "public" : true
+         },
+         "extra_volumes" : {},
+         "id" : "b4bdbee1-e1f1-4436-8de4-bdb1b6ba4803",
+         "creation_date" : "2019-03-05T10:18:36.252265+00:00",
+         "arch" : "arm64",
+         "public" : true,
+         "state" : "available",
+         "name" : "Ubuntu Bionic Beaver",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "public" : true,
+         "name" : "Ubuntu Bionic Beaver",
+         "state" : "available",
+         "creation_date" : "2019-03-05T10:13:15.974944+00:00",
+         "arch" : "x86_64",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.9.93 rev1",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "architecture" : "x86_64"
+         },
+         "id" : "f974feac-abae-4365-b988-8ec7d1cec10d",
+         "modification_date" : "2019-03-05T13:32:29.274319+00:00",
+         "root_volume" : {
+            "id" : "dd5f5c10-23b1-4c9c-8445-eb6740957c84",
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-de728daa-0bf6-4c64-abf5-a9477e791c83-2019-03-05_10:13",
+            "size" : 10000000000
+         }
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "state" : "available",
+         "name" : "Docker",
+         "public" : true,
+         "creation_date" : "2019-01-02T09:17:23.015235+00:00",
+         "arch" : "arm64",
+         "id" : "d01d19bd-ce4e-4da5-98c0-bb636a1961cd",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "id" : "1802caeb-0594-4739-a798-583ff5b270c6",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.4-4.4.127-rev1/vmlinux-4.4.127",
+            "architecture" : "arm64",
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "aarch64 mainline 4.4.127 rev1",
+            "public" : false
+         },
+         "modification_date" : "2019-01-03T09:52:10.207680+00:00",
+         "root_volume" : {
+            "size" : 50000000000,
+            "name" : "snapshot-7e665456-6d1c-4c87-b5fd-7b9acb7f28ed-2019-01-02_09:17",
+            "volume_type" : "l_ssd",
+            "id" : "f6704cec-6c48-4de5-82b5-83c1dba30bdc"
+         }
+      },
+      {
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "state" : "available",
+         "name" : "Docker",
+         "public" : true,
+         "id" : "55e3fb16-8002-49b5-b7af-8aa406c2b100",
+         "default_bootscript" : {
+            "id" : "8c76c2b9-926e-44c5-b250-6f6480b5d313",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "kernel" : "kernel/armv7l-mainline-lts-4.4-4.4.127-rev1",
+            "architecture" : "arm",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.4-4.4.127-rev1",
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "armv7l mainline 4.4.127 rev1",
+            "public" : false
+         },
+         "extra_volumes" : {},
+         "arch" : "arm",
+         "creation_date" : "2019-01-02T09:11:47.346521+00:00",
+         "modification_date" : "2019-01-02T09:59:07.302252+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 50000000000,
+            "name" : "snapshot-748123f3-81e1-4457-9186-141f9edaae3c-2019-01-02_09:11",
+            "id" : "a8ba19e6-2a12-4ed4-bdd6-7f696a8df9a6"
+         }
+      },
+      {
+         "public" : true,
+         "name" : "Docker",
+         "state" : "available",
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2019-01-02T09:59:05.680186+00:00",
+         "root_volume" : {
+            "id" : "8deb8508-4a63-4ac6-b4e2-f474c217030b",
+            "name" : "snapshot-c6ed5973-c29c-4900-b197-d35ba8588bdc-2019-01-02_09:10",
+            "size" : 50000000000,
+            "volume_type" : "l_ssd"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2019-01-02T09:10:51.701084+00:00",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "architecture" : "x86_64",
+            "dtb" : "",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "public" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111"
+         },
+         "id" : "0e4ce0d3-f6d4-4f27-a4a0-fe6b9f0b889c"
+      },
+      {
+         "state" : "available",
+         "name" : "Alpine Linux",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2018-09-14T10:12:07.259918+00:00",
+         "root_volume" : {
+            "id" : "e901544b-e15b-4ebe-a3fe-ea508c02b749",
+            "size" : 50000000000,
+            "name" : "snapshot-c2920bc6-bf9d-425d-bd83-e055952b80e3-2018-09-14_10:01",
+            "volume_type" : "l_ssd"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2018-09-14T10:01:24.268850+00:00",
+         "id" : "2fa25ccf-f30e-4225-b328-87472a35c75d",
+         "default_bootscript" : {
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "dtb" : "",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "title" : "x86_64 mainline 4.9.93 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false
+         },
+         "extra_volumes" : {}
+      },
+      {
+         "root_volume" : {
+            "id" : "dff5b547-5def-4f3a-8a9f-20f9e2f3b226",
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-acc33d0b-21c8-4af8-985a-40dc11eaf8a6-2018-09-06_10:55",
+            "size" : 50000000000
+         },
+         "modification_date" : "2018-09-06T11:16:06.174039+00:00",
+         "id" : "d6068fa6-874a-403e-9a16-49d5449f7e75",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "architecture" : "x86_64",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.9.93 rev1"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2018-09-06T10:55:20.748481+00:00",
+         "name" : "Alpine Linux",
+         "state" : "available",
+         "public" : true,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "public" : true,
+         "name" : "Fedora 27",
+         "state" : "available",
+         "creation_date" : "2018-09-06T10:30:21.538000+00:00",
+         "arch" : "x86_64",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "public" : false,
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "dtb" : "",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127"
+         },
+         "id" : "097a100e-fd2f-4918-8a5b-d86de5a489be",
+         "modification_date" : "2018-09-06T10:51:13.119929+00:00",
+         "root_volume" : {
+            "size" : 50000000000,
+            "name" : "snapshot-572a6d2e-fcd2-4ffd-b180-4650ed318431-2018-09-06_10:30",
+            "volume_type" : "l_ssd",
+            "id" : "126fe469-3632-463f-940f-9be409b5ef4e"
+         }
+      },
+      {
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "state" : "available",
+         "name" : "CentOS 7.4",
+         "public" : true,
+         "id" : "37832f54-c18f-4338-a552-113e4302a236",
+         "default_bootscript" : {
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "dtb" : "",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1"
+         },
+         "extra_volumes" : {},
+         "arch" : "x86_64",
+         "creation_date" : "2018-09-06T10:26:11.554397+00:00",
+         "modification_date" : "2018-09-06T10:40:08.145552+00:00",
+         "root_volume" : {
+            "id" : "27aa607b-8b70-41cb-b1fd-f3e8a80f40b6",
+            "volume_type" : "l_ssd",
+            "size" : 50000000000,
+            "name" : "snapshot-570437e5-a815-48ad-acc1-c880e6f7fc4f-2018-09-06_10:26"
+         }
+      },
+      {
+         "state" : "available",
+         "name" : "Ubuntu Xenial",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2018-09-05T21:16:06.628440+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 50000000000,
+            "name" : "snapshot-bf9be2ee-d7fc-41e2-9d82-5d0ab0516beb-2018-09-05_14:56",
+            "id" : "66693415-d60c-4b5e-90b8-a97e67722323"
+         },
+         "arch" : "arm",
+         "creation_date" : "2018-09-05T14:56:46.872409+00:00",
+         "id" : "f71f2ad9-7810-405b-9181-2e8d5e1feb18",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "id" : "8c76c2b9-926e-44c5-b250-6f6480b5d313",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.4-4.4.127-rev1",
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.4-4.4.127-rev1",
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "armv7l mainline 4.4.127 rev1",
+            "public" : false
+         }
+      },
+      {
+         "creation_date" : "2018-09-05T14:51:28.693415+00:00",
+         "arch" : "arm64",
+         "default_bootscript" : {
+            "title" : "aarch64 mainline 4.4.127 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.4-4.4.127-rev1/vmlinux-4.4.127",
+            "architecture" : "arm64",
+            "id" : "1802caeb-0594-4739-a798-583ff5b270c6",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16"
+         },
+         "extra_volumes" : {},
+         "id" : "b7355945-f4e8-4a36-a59b-a67ebf7ab0e5",
+         "modification_date" : "2018-09-05T21:16:06.339136+00:00",
+         "root_volume" : {
+            "id" : "734eb6c7-8ac9-4d5a-8d31-66b64084c630",
+            "name" : "snapshot-b9e10214-0314-47ed-b673-8e3f5772b395-2018-09-05_14:51",
+            "size" : 50000000000,
+            "volume_type" : "l_ssd"
+         },
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "public" : true,
+         "name" : "Ubuntu Xenial",
+         "state" : "available"
+      },
+      {
+         "default_bootscript" : {
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "dtb" : "",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.4.127 rev1"
+         },
+         "extra_volumes" : {},
+         "id" : "b5a754d1-8262-47d2-acb2-22739295bb68",
+         "arch" : "x86_64",
+         "creation_date" : "2018-09-05T14:46:50.293371+00:00",
+         "modification_date" : "2018-09-05T21:16:06.062984+00:00",
+         "root_volume" : {
+            "name" : "snapshot-c59f48b3-72b2-45a8-95c6-371589025ba4-2018-09-05_14:46",
+            "size" : 50000000000,
+            "volume_type" : "l_ssd",
+            "id" : "c174969c-70b5-43d4-be71-424aa8612dec"
+         },
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null,
+         "public" : true,
+         "state" : "available",
+         "name" : "Ubuntu Xenial"
+      },
+      {
+         "modification_date" : "2018-09-02T18:38:06.594570+00:00",
+         "root_volume" : {
+            "id" : "d727be12-9fc6-46dd-99a5-8632ac743a35",
+            "size" : 25000000000,
+            "name" : "snapshot-5dc4545f-4170-4a95-9c00-70b6d04f85b0-2018-09-02_16:56",
+            "volume_type" : "l_ssd"
+         },
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "dtb" : "",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "architecture" : "x86_64",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16"
+         },
+         "id" : "c564be4f-2dac-4b1b-a239-3f3a441700ed",
+         "creation_date" : "2018-09-02T16:56:59.218040+00:00",
+         "arch" : "x86_64",
+         "public" : true,
+         "state" : "available",
+         "name" : "Ubuntu Xenial",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "state" : "available",
+         "name" : "Ubuntu Bionic Beaver",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2018-08-31T17:20:06.142003+00:00",
+         "root_volume" : {
+            "id" : "c5477872-2296-489a-8efa-20ca14f3c677",
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-2ef53a3d-ed6c-46eb-89a3-545d46b8b1bc-2018-08-31_12:20",
+            "size" : 50000000000
+         },
+         "arch" : "arm64",
+         "creation_date" : "2018-08-31T12:20:21.787900+00:00",
+         "id" : "e756fdb5-f586-4d9b-8585-817151749a96",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "title" : "aarch64 mainline 4.9.93 rev1",
+            "public" : true,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "dtb" : "",
+            "architecture" : "arm64",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.9-4.9.93-rev1/vmlinux-4.9.93",
+            "id" : "97b18dc5-701c-44d2-ac8b-b89a5ac4acb2",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16"
+         }
+      },
+      {
+         "modification_date" : "2018-08-31T17:20:05.917862+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "size" : 50000000000,
+            "name" : "snapshot-face0660-f1b6-45f9-b3aa-7edff8b97fea-2018-08-31_12:19",
+            "id" : "6983b5b8-f7b4-4827-b61f-b3112c691d1c"
+         },
+         "id" : "417e38f1-b87a-404d-9f6c-63ff85e801d7",
+         "default_bootscript" : {
+            "id" : "5c8e4527-d166-4844-b6c6-087d7a6f5fb0",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "architecture" : "arm",
+            "kernel" : "kernel/armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "armv7l mainline 4.9.93 rev1",
+            "public" : false
+         },
+         "extra_volumes" : {},
+         "arch" : "arm",
+         "creation_date" : "2018-08-31T12:19:34.462983+00:00",
+         "name" : "Ubuntu Bionic Beaver",
+         "state" : "available",
+         "public" : true,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "state" : "available",
+         "name" : "Ubuntu Bionic Beaver",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2018-08-31T17:20:05.687183+00:00",
+         "root_volume" : {
+            "name" : "snapshot-e845ae67-2e67-4ec0-8955-3293a851b092-2018-08-31_12:09",
+            "size" : 50000000000,
+            "volume_type" : "l_ssd",
+            "id" : "6fb4094d-f6e2-4b6e-b659-dc62258e9dad"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2018-08-31T12:09:48.318542+00:00",
+         "id" : "d4067cdc-dc9d-4810-8a26-0dae51d7df42",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "dtb" : "",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "title" : "x86_64 mainline 4.9.93 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false
+         }
+      },
+      {
+         "public" : true,
+         "name" : "Alpine Linux",
+         "state" : "available",
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "modification_date" : "2018-08-31T11:05:04.158213+00:00",
+         "root_volume" : {
+            "name" : "snapshot-73eef97d-cbbb-4fec-97ea-6e4826324a52-2018-08-31_10:54",
+            "size" : 50000000000,
+            "volume_type" : "l_ssd",
+            "id" : "6bd110b7-eb53-4d18-b092-284ebf9bd9cf"
+         },
+         "arch" : "x86_64",
+         "creation_date" : "2018-08-31T10:54:38.793275+00:00",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "dtb" : "",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "x86_64 mainline 4.9.93 rev1"
+         },
+         "id" : "d502fb5f-efbb-47ff-bc0e-d49a0069be54"
+      },
+      {
+         "arch" : "x86_64",
+         "creation_date" : "2018-08-31T10:27:54.591103+00:00",
+         "id" : "e4b4b890-4043-4edc-b6df-4297616e7612",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "dtb" : "",
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16"
+         },
+         "root_volume" : {
+            "id" : "253fb96a-b718-465b-89c0-b6cc782cecb5",
+            "size" : 50000000000,
+            "name" : "snapshot-bf49d83c-da56-485d-8bf4-22dafae1d0a0-2018-08-31_10:27",
+            "volume_type" : "l_ssd"
+         },
+         "modification_date" : "2018-08-31T10:46:09.570933+00:00",
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "name" : "CentOS 7.4",
+         "state" : "available",
+         "public" : true
+      },
+      {
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "public" : true,
+         "state" : "available",
+         "name" : "Fedora 27",
+         "arch" : "x86_64",
+         "creation_date" : "2018-08-31T10:26:20.573635+00:00",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "title" : "x86_64 mainline 4.4.127 rev1",
+            "public" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "architecture" : "x86_64",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.4-4.4.127-rev1/vmlinuz-4.4.127",
+            "dtb" : "",
+            "id" : "b1e68c26-a19c-4eac-9222-498b22bd7ad9",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz"
+         },
+         "id" : "b1c897b4-b978-424f-9911-22edb5a7e77e",
+         "modification_date" : "2018-08-31T10:46:09.862457+00:00",
+         "root_volume" : {
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-14f0fb62-32d0-47af-8711-8e9553a2bec6-2018-08-31_10:26",
+            "size" : 50000000000,
+            "id" : "f159a87a-4ead-43ea-993a-238cad362aa5"
+         }
+      },
+      {
+         "modification_date" : "2018-08-31T11:46:04.855239+00:00",
+         "root_volume" : {
+            "id" : "93291e34-2bfa-4226-bfd9-807aa2ed61b3",
+            "name" : "snapshot-975cab88-745c-4866-8844-506ec70206d6-2018-08-31_09:47",
+            "size" : 50000000000,
+            "volume_type" : "l_ssd"
+         },
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : true,
+            "title" : "aarch64 mainline 4.9.93 rev1",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-arm64-v3.14.6.gz",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "97b18dc5-701c-44d2-ac8b-b89a5ac4acb2",
+            "dtb" : "",
+            "architecture" : "arm64",
+            "kernel" : "http://169.254.42.24/kernel/aarch64-mainline-lts-4.9-4.9.93-rev1/vmlinux-4.9.93"
+         },
+         "id" : "622424dc-25b9-4603-8f42-ca78bf65bb8e",
+         "arch" : "arm64",
+         "creation_date" : "2018-08-31T09:47:40.081772+00:00",
+         "public" : true,
+         "state" : "available",
+         "name" : "Debian Stretch",
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "from_server" : null
+      },
+      {
+         "modification_date" : "2018-08-31T11:46:04.650055+00:00",
+         "root_volume" : {
+            "id" : "573dae85-a62e-4679-a464-a6eb07dbac59",
+            "size" : 50000000000,
+            "name" : "snapshot-8cce5350-004e-47a1-8a65-fb3571992a48-2018-08-31_09:40",
+            "volume_type" : "l_ssd"
+         },
+         "arch" : "arm",
+         "creation_date" : "2018-08-31T09:40:52.289780+00:00",
+         "id" : "a1a09ae3-f3f3-4576-b3be-793de77c0512",
+         "extra_volumes" : {},
+         "default_bootscript" : {
+            "initrd" : "initrd/uInitrd-Linux-armv7l-v3.14.6",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "id" : "5c8e4527-d166-4844-b6c6-087d7a6f5fb0",
+            "dtb" : "dtb/c1-armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "kernel" : "kernel/armv7l-mainline-lts-4.9-4.9.93-rev1",
+            "architecture" : "arm",
+            "default" : false,
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "public" : false,
+            "title" : "armv7l mainline 4.9.93 rev1"
+         },
+         "name" : "Debian Stretch",
+         "state" : "available",
+         "public" : true,
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db"
+      },
+      {
+         "creation_date" : "2018-08-31T09:34:16.445247+00:00",
+         "arch" : "x86_64",
+         "default_bootscript" : {
+            "organization" : "11111111-1111-4111-8111-111111111111",
+            "default" : false,
+            "title" : "x86_64 mainline 4.9.93 rev1",
+            "public" : false,
+            "id" : "15fbd2f7-a0f9-412b-8502-6a44da8d98b8",
+            "bootcmdargs" : "LINUX_COMMON scaleway boot=local nbd.max_part=16",
+            "initrd" : "http://169.254.42.24/initrd/initrd-Linux-x86_64-v3.14.6.gz",
+            "kernel" : "http://169.254.42.24/kernel/x86_64-mainline-lts-4.9-4.9.93-rev1/vmlinuz-4.9.93",
+            "architecture" : "x86_64",
+            "dtb" : ""
+         },
+         "extra_volumes" : {},
+         "id" : "da6ebdf0-cb8f-4c5b-92cd-fd3a6929f75d",
+         "modification_date" : "2018-08-31T11:46:04.492347+00:00",
+         "root_volume" : {
+            "id" : "220fe219-f358-4a56-9088-fb039d0af60e",
+            "volume_type" : "l_ssd",
+            "name" : "snapshot-f8347610-5df3-44fe-98b5-8b7183ef1d03-2018-08-31_09:34",
+            "size" : 50000000000
+         },
+         "from_server" : null,
+         "organization" : "51b656e3-4865-41e8-adbc-0c45bdd780db",
+         "public" : true,
+         "state" : "available",
+         "name" : "Debian Stretch"
+      }
+   ]
+}

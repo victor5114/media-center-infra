@@ -1,0 +1,15 @@
+.DS_Store
+.idea/*
+db.sqlite3
+*.pyc
+Thumbs.db
+*/vendor
+ionic/platforms
+.coverage
+media/*
+tmp/
+*.env
+*.ai
+*.retry
+.vscode
+*.log

@@ -1,0 +1,17 @@
+---
+- name: Create systemd dropin for docker
+  file:
+    path: "{{docker_systemd_conf}}"
+    state: directory
+
+- name: Configure docker daemon with systemd
+  template:
+    src: docker.service.conf
+    dest: "{{docker_systemd_conf}}/"
+  notify: Reload docker
+
+- name: Configure daemon with JSON
+  template:
+    src: daemon.json
+    dest: "{{docker_daemon_conf}}/"
+  notify: Reload docker

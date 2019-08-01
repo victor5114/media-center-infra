@@ -1,0 +1,17 @@
+*.retry
+
+venv/
+VENV/
+
+.vscode/
+*.swp
+.idea/
+
+__pycache__
+*.pyc
+
+vault.txt
+inventory/scaleway.ini
+ansible_imr_cache/
+
+!**/*.env

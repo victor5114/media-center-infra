@@ -1,0 +1,9 @@
+---
+- name: Deploy server
+  hosts: tag_staging
+  gather_facts: yes
+  vars:
+    env: staging
+
+  roles:
+  - imr/deploy-web

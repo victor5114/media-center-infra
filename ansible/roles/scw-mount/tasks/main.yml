@@ -1,0 +1,32 @@
+- name: Resolve scw device path
+  set_fact:
+    scw_real_device: "/dev/vdb"
+    scw_real_partition: "/dev/vdb1"
+
+- name: Create scw volume partition
+  parted:
+    device: "{{scw_real_device}}"
+    number: 1
+    part_type: primary
+    state: present
+
+- name: Create scw disk filesystem
+  filesystem:
+    dev: "{{scw_real_partition}}" 
+    fstype: "{{scw_fs}}"
+
+- name: Create scw mount directory
+  file:
+    path: "{{scw_mount}}"
+    state: directory
+
+- name: Mount data directory
+  mount:
+    path: "{{scw_mount}}"
+    src: "{{scw_real_partition}}"
+    fstype: "{{scw_fs}}"
+    opts: defaults,nofail
+    dump: 1
+    passno: 2
+    state: mounted
+    
