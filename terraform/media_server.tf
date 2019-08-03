@@ -3,13 +3,14 @@ resource "scaleway_ip" "media_server_public_ip" {
 }
 
 resource "scaleway_server" "media_server" {
-  count     = 1
-  name      = "media_server"
-  image     = "${local.image_id}"
-  type      = "${var.media_server_instance_type}"
-  public_ip = "${element(scaleway_ip.media_server_public_ip.*.ip, count.index)}"
-  state     = "running"
-  tags      = ["media-server", "docker", "prod"]
+  count          = 1
+  name           = "media_server"
+  image          = "${local.image_id}"
+  type           = "${var.media_server_instance_type}"
+  public_ip      = "${element(scaleway_ip.media_server_public_ip.*.ip, count.index)}"
+  state          = "running"
+  tags           = ["media-server", "docker", "prod"]
+  security_group = "${scaleway_security_group.whitelist.id}"
 
   # volumes   = ["${scaleway_volume.volume_prod.id}"]
 }
