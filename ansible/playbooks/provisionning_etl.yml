@@ -1,8 +1,0 @@
-- name: Provisionning etl server
-  hosts: tag_etl_server
-  gather_facts: yes
-
-  roles:
-    - scw-mount
-    - imr/etl-server
-    - datadog-agent

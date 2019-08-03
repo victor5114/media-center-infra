@@ -1,3 +1,0 @@
----
-- name: Reload docker
-  shell: systemctl daemon-reload && systemctl restart docker

@@ -15,3 +15,9 @@ inventory/scaleway.ini
 ansible_imr_cache/
 
 !**/*.env
+
+# Unversionned galaxy role
+roles/plex
+roles/plexupdate
+roles/tautulli
+roles/s3fs-fuse

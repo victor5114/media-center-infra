@@ -1,3 +1,0 @@
----
-docker_systemd_conf: /lib/systemd/system/docker.service.d
-docker_daemon_conf: /etc/docker/

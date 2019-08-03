@@ -1,6 +1,0 @@
----
-- name: Installation
-  include: install.yml
-
-- name: Customization
-  include: customize.yml

@@ -1,0 +1,16 @@
+---
+- src: https://github.com/bastiaanvanassche/ansible-role-s3fs-fuse.git
+  version: master
+  name: s3fs-fuse
+
+- src: https://github.com/wilmardo/ansible-role-plex.git
+  version: master
+  name: plex
+
+- src: https://github.com/wilmardo/ansible-role-plexupdate.git
+  version: master
+  name: plexupdate
+
+- src: https://github.com/wilmardo/ansible-role-tautulli.git
+  version: master
+  name: tautulli

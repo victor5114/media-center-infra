@@ -1,9 +1,0 @@
-- name: Provisionning production environnement
-  hosts: tag_prod
-  gather_facts: yes
-  vars:
-    env: prod
-
-  roles:
-    - imr/web-server
-    - datadog-agent
