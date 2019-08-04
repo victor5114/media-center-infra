@@ -1,5 +1,5 @@
 # Gandi domain
-Media center can be found at https://victor-media-center, which has been registered at Gandi.
+Media center can be found at https://victor-media-center.xyz, which has been registered at Gandi.
 in the next section, URIs occurence will refer to https://your.media.center.uri
 
 # Ansible
