@@ -1,0 +1,7 @@
+---
+- name: Deploy nginx configuration update on media server
+  hosts: tag_media-server
+  gather_facts: yes
+
+  roles:
+  - role: deploy-nginx

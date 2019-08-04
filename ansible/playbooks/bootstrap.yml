@@ -1,9 +1,10 @@
 ---
-- name: Deploy media server
+- name: Bootstrap media server
   hosts: tag_media-server
   gather_facts: yes
 
   roles:
+  - role: bootstrap-nginx
   - role: s3fs-fuse
     s3fs_fuse_version: "1.80"
     s3fs_fuse_bucket: media-bucket

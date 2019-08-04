@@ -1,0 +1,51 @@
+---
+- include_vars: vault.yml
+
+- name: Create nginx user
+  user:
+    name: nginx
+    password: "{{password}}"
+    groups:
+    - docker
+
+- name: Make sure we have a nginx group
+  group:
+    name: nginx
+    state: present
+
+- name: Make sure we have a docker group
+  group:
+    name: docker
+    state: present
+
+- name: Install pkg
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+  - sudo
+  - python3-pip
+
+- name: Allow 'nginx' group to have passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%nginx'
+    line: '%nginx ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+
+- name: Add sudoers users to nginx group
+  user: name=nginx groups=nginx append=yes state=present createhome=yes
+
+- name: Add sudoers users to docker group
+  user: name=nginx groups=docker append=yes state=present createhome=yes
+
+- name: Install Python pkg
+  pip:
+    name: "{{item}}"
+    executable: pip3
+    state: present
+  with_items:
+  - requests
+  - docker
+  - docker-compose
