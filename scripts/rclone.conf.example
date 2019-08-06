@@ -1,0 +1,9 @@
+[scaleway]
+type = s3
+provider = Other
+env_auth = false
+access_key_id = MY_ACCESS_KEY
+secret_access_key = MY_SECRET_KEY
+endpoint = s3.nl-ams.scw.cloud
+acl = private
+region = other-v2-signature
