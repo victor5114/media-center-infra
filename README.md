@@ -1,5 +1,6 @@
-# Media center Infrastructure
-![Screenshot](Media Center.png)
+# Media Center Infrastructure
+
+<img src="./Media Center.png" alt="My Media Center Infrastructure diagram"/>
 
 ## Gandi domain
 Media center can be found at https://victor-media-center.xyz. This domain has been registered at Gandi domain registrar.
