@@ -8,7 +8,7 @@ resource "scaleway_security_group_rule" "http_home" {
 
   action    = "accept"
   direction = "inbound"
-  ip_range  = "176.185.196.57/32"
+  ip_range  = "176.185.196.57"
   protocol  = "TCP"
 
   #   port      = 25
