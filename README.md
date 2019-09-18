@@ -35,3 +35,16 @@ I've built a Nginx docker image on my local station then pushed it on SCW Contai
 
 ### Certbot
 Once the docker container has started, simply enter with `docker exec -it {container.id} bash` command and launch `certbot --nginx -d your.media.center.uri`. You'll be asked a bunch of question that you must answer carefully. Also be aware that these steps might affect your nginx configuration. I'm used to replacing my old configuration with the updated one.
+
+
+#### NOTICE
+It can happen that mounted device is broken or mounted twice. This can create problem when reading drive on plex media. You can simply fix this by connecting to the server and do the following commands
+
+```
+# Remove the mounted point
+ansible@media-server:~$ sudo fusermount -uz /mnt/s3
+# Check it's not there anymore
+ansible@media-server:~$ sudo cat /etc/mtab
+```
+
+Then relaunch the command `ansible-playbook playbooks/mount.yml`
