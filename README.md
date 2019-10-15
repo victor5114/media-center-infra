@@ -48,3 +48,10 @@ ansible@media-server:~$ sudo cat /etc/mtab
 ```
 
 Then relaunch the command `ansible-playbook playbooks/mount.yml`
+
+
+#### TODO
+- [] CLEAN CACHE S3FS
+
+[Clean cache script](https://github.com/s3fs-fuse/s3fs-fuse/blob/master/test/sample_delcache.sh)
+sudo /opt/clean_cache.sh media-bucket /tmp/cache 10000000000 (Keep 10Gb of cache around)

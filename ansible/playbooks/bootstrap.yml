@@ -5,6 +5,7 @@
 
   roles:
   - role: bootstrap-nginx
+  - role: fail2ban
   - role: plex
     # If Tautulli will get installed
     tautulli_install: true
@@ -53,3 +54,4 @@
       - "umask=0002,uid=112,gid=115" # uid and gid must be plex user and group id
     s3fs_fuse_access_key_id: "{{vault_access_key_id}}"
     s3fs_fuse_secret_access_key: "{{vault_secret_access_key}}"
+
