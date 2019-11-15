@@ -1,0 +1,16 @@
+---
+- name: Send script
+  template:
+    src: remount.sh
+    dest: /opt/remount.sh
+    owner: ansible
+    group: ansible
+    mode: '0755'
+
+- name: Schedule a mount reset every night
+  cron:
+    name: Mount cleanup
+    minute: 0
+    hour: 1
+    job: sudo /opt/remount.sh
+    state: present

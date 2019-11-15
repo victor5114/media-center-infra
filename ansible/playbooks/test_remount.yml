@@ -1,5 +1,5 @@
 ---
-- name: Mount media server folder only
+- name: Test remount media server folder only
   hosts: tag_media-server
   gather_facts: yes
 
@@ -18,7 +18,6 @@
     s3fs_fuse_secret_access_key: "{{vault_secret_access_key}}"
 
   roles:
-  - role: s3fs-fuse
   - role: s3fs-fuse-clean
 
 
