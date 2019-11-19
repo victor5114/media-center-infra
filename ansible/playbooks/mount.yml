@@ -20,5 +20,6 @@
   roles:
   - role: s3fs-fuse
   - role: s3fs-fuse-clean
+  - role: s3fs-cache-handler
 
 

@@ -1,0 +1,16 @@
+---
+- name: Send script
+  template:
+    src: clean_cache.sh
+    dest: /opt/clean_cache.sh
+    owner: ansible
+    group: ansible
+    mode: '0755'
+
+- name: Schedule a mount reset every night
+  cron:
+    name: Mount cleanup
+    minute: 0
+    hour: 2
+    job: sudo /opt/clean_cache.sh
+    state: present
