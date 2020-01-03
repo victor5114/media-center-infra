@@ -12,5 +12,5 @@
     name: Mount cleanup
     minute: 0
     hour: 2
-    job: sudo /opt/clean_cache.sh
+    job: sudo /opt/clean_cache.sh media-bucket /tmp/cache 1000000000
     state: present
