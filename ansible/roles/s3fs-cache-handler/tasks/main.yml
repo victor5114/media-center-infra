@@ -9,7 +9,7 @@
 
 - name: Schedule a mount reset every night
   cron:
-    name: Mount cleanup
+    name: Clean cache
     minute: 0
     hour: 2
     job: sudo /opt/clean_cache.sh media-bucket /tmp/cache 1000000000

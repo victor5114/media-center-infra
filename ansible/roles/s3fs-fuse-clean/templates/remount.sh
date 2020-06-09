@@ -1,10 +1,4 @@
-return=$( mount | grep /mnt/s3 )
-
-# unmount disk if $return not empty
-if [ -z "$return" ]:
-then
-    sudo fusermount -uz /mnt/s3
-fi
+seq `mount | grep /mnt/s3 | wc -l` | xargs -I -- sudo fusermount -uz /mnt/s3
 
 # Remount disk
 s3fs \
