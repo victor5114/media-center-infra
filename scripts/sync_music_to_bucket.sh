@@ -1,7 +1,8 @@
 #!/bin/bash
 
-rclone sync ~/Music/LibraryVictor/ \
+rclone -vv sync /Volumes/SG-VICTOR/LibraryVictor/ \
     --ignore-existing \
     --exclude Compilation/ \
     --exclude .DS_Store \
-    scaleway:media-bucket/music
+    media-server-data-folder:data/music
+    #scaleway:media-bucket/music
