@@ -1,0 +1,9 @@
+---
+dependencies:
+  - role: pip
+    vars:
+      pip_package: python3-pip
+  - role: docker_arm
+    vars:
+      docker_pip_executable: pip3
+      docker_users: ["victor"]

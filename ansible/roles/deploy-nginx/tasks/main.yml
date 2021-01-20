@@ -34,15 +34,15 @@
 - name: Copy nginx config
   copy:
     src: "media.server.conf"
-    dest: /opt/nginx/conf/media.server.conf
+    dest: /opt/nginx/conf/default.conf
 
 - name: Run nginx
   docker_container:
     name: proxy
-    image: "{{docker_registry}}/nginx-media:latest"
-    published_ports:
-      - 80:80
-      - 443:443
+    image: "{{docker_registry}}/nginx-arm-certbot:latest"
+    # published_ports:
+    #   - 80:80
+    #   - 443:443
     volumes:
       - "/opt/nginx/certs:/etc/letsencrypt"
       - "/opt/nginx/conf:/etc/nginx/conf.d"

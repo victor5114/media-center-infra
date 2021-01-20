@@ -14,3 +14,11 @@
 - src: https://github.com/wilmardo/ansible-role-tautulli.git
   version: master
   name: tautulli
+
+- src: https://github.com/geerlingguy/ansible-role-docker_arm
+  version: master
+  name: docker_arm
+
+- src: https://github.com/geerlingguy/ansible-role-pip
+  version: master
+  name: pip

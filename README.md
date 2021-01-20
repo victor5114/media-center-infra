@@ -10,6 +10,9 @@ In the next section, URIs occurence will refer to https://your.media.center.uri
 ### Install Ansible Galaxy requirements
 `ansible-galaxy install -r requirements.yml`
 
+### Boostrap
+`ansible-playbook -v -b -c paramiko --ask-pass playbooks/boostrap.yml`
+`ansible-playbook -v -b -c paramiko --ask-pass playbooks/deploy_nginx.yml`
 ## Scaleway Container Registry (BETA)
 ### Manual creation
 No terraform command available as SCW Container registry is still in beta.

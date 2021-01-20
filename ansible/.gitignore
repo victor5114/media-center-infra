@@ -21,3 +21,5 @@ roles/plex
 roles/plexupdate
 roles/tautulli
 roles/s3fs-fuse
+roles/docker_arm
+roles/pip
