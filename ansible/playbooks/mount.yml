@@ -1,0 +1,7 @@
+---
+- name: Bootstrap media server
+  hosts: tag_media-server
+  gather_facts: yes
+
+  roles:
+  - role: mount_disk

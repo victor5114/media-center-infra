@@ -19,17 +19,15 @@
   with_items:
     - certs
     - conf
-
 - name: Log into private registry and force re-authorization
   docker_login:
     registry: "{{docker_registry}}"
     username: nologin
     password: "{{vault_secret_access_key}}"
     reauthorize: yes
-
-# - name: Create a network
-#   docker_network:
-#     name: "{{docker_network_name}}"
+#- name: Create a network
+#  docker_network:
+#    name: "{{docker_network_name}}"
 
 - name: Copy nginx config
   copy:
@@ -37,6 +35,7 @@
     dest: /opt/nginx/conf/default.conf
 
 - name: Run nginx
+  
   docker_container:
     name: proxy
     image: "{{docker_registry}}/nginx-arm-certbot:latest"
@@ -44,7 +43,6 @@
     #   - 80:80
     #   - 443:443
     volumes:
-      - "/opt/nginx/certs:/etc/letsencrypt"
       - "/opt/nginx/conf:/etc/nginx/conf.d"
     network_mode: host
     restart_policy: always

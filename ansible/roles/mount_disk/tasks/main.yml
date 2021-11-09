@@ -1,0 +1,20 @@
+- name: Install Exfat libs
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+  - exfat-fuse
+  - exfat-utils
+- name: Create media directory
+  file:
+    path: /home/victor/media
+    state: directory
+    owner: root
+    group: root
+- name: Mount media partition
+  mount:
+    path: /home/victor/media
+    src: /dev/sda2
+    opts: rw
+    state: mounted
+    fstype: exfat

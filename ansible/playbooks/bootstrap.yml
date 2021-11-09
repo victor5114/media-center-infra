@@ -4,6 +4,7 @@
   gather_facts: yes
 
   roles:
+  - role: mount_disk
   - role: bootstrap-nginx
   - role: fail2ban
   - role: plex
